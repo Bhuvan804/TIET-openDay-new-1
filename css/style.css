@@ -8419,7 +8419,7 @@ h1, h2, h3, h4, h5,
     color: #fff; }
     .btn.btn-primary:hover {
       border: 1px solid #640000;
-      background: transparent;
+      background: #fff;
       color: #640000; }
     .btn.btn-primary.btn-outline-primary {
       border: 1px solid #640000;
@@ -8427,7 +8427,7 @@ h1, h2, h3, h4, h5,
       color: #640000; }
       .btn.btn-primary.btn-outline-primary:hover {
         border: 1px solid transparent;
-        background: #640000;
+        background: #fff;
         color: #fff; }
   .btn.btn-white {
     background: #fff;
@@ -8908,7 +8908,7 @@ textarea.form-control {
     width: 60%;
     margin: 0 auto; }
     .block-7 .btn-primary:hover, .block-7 .btn-primary:focus {
-      background: #640000 !important;
+      background: #fff !important;
       color: #fff; }
   .block-7:hover, .block-7:focus {
     -webkit-box-shadow: 0px 24px 48px -13px rgba(0, 0, 0, 0.11);
