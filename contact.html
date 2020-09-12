@@ -181,7 +181,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
-          <h2 class="footer-heading">Thapar Unversity</h2>
+          <h2 class="footer-heading">Thapar Institute of Engineering & Technology</h2>
           <p>The Thapar Institute of Engineering and Technology (TIET) is one of India's oldest and finest educational
             institutions, which provides a steady source of highly skilled talent to the nation as well as overseas.</p>
           <ul class="ftco-footer-social p-0">
@@ -208,13 +208,15 @@
 
           <h2 class="footer-heading">Quick Links</h2>
           <ul class="list-unstyled">
-            <li><a href="#" class="py-2 d-block">Home</a></li>
-            <li><a href="#" class="py-2 d-block">Engineering Streams</a></li>
-            <li><a href="#" class="py-2 d-block">Meet Thapar Alumni</a></li>
-            <li><a href="#" class="py-2 d-block">Gallery</a></li>
-            <li><a href="#" class="py-2 d-block">FAQ's</a></li>
+            <li><a href="index.html" class="py-2 d-block">Home</a></li>
+            <li><a href="streams.html" class="py-2 d-block">Engineering Streams</a></li>
+            <li><a href="alumni.html" class="py-2 d-block">Sessions by Alumni</a></li>
+            <li><a href="placement.html" class="py-2 d-block">Placements</a></li>
+            <li><a href="gallery.html" class="py-2 d-block">Gallery</a></li>
+            <li><a href="http://www.thapar.edu/" class="py-2 d-block">Thapar Official Website</a></li>
+<!--             <li><a href="#" class="py-2 d-block">FAQ's</a></li>
             <li><a href="#" class="py-2 d-block">HelpContact</a></li>
-          </ul>
+ -->          </ul>
 
 
         </div>
@@ -267,6 +269,32 @@
     data-cf-settings="7fcabe0204b65ee20594bff5-|49" defer=""></script>
   <script defer src="https://static.cloudflareinsights.com/beacon.min.js"
     data-cf-beacon='{"rayId":"5d06b9d2add2017a","version":"2020.9.0","si":10}'></script>
+  <script>
+    window.document.onkeydown = function (e) {
+      if (!e) {
+        e = event;
+      }
+      if (e.keyCode == 27) {
+        lightbox_close();
+      }
+    }
+
+    function lightbox_open() {
+      var lightBoxVideo = document.getElementById("VisaChipCardVideo");
+      window.scrollTo(0, 0);
+      document.getElementById('light').style.display = 'block';
+      document.getElementById('fade').style.display = 'block';
+      lightBoxVideo.play();
+    }
+
+    function lightbox_close() {
+      var lightBoxVideo = document.getElementById("VisaChipCardVideo");
+      document.getElementById('light').style.display = 'none';
+      document.getElementById('fade').style.display = 'none';
+      lightBoxVideo.pause();
+    }
+  </script>
+
 </body>
 
 </html>
