@@ -18,67 +18,67 @@
   <link rel="stylesheet" href="css/style.css">
 
 
-<style>
-  #fade {
-  display: none;
-  position: fixed;
-  top: 0%;
-  left: 0%;
-  width: 100%;
-  height: 100%;
-  background-color: black;
-  z-index: 1001;
-  -moz-opacity: 0.8;
-  opacity: .80;
-  filter: alpha(opacity=80);
-}
+  <style>
+    #fade {
+      display: none;
+      position: fixed;
+      top: 0%;
+      left: 0%;
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      z-index: 1001;
+      -moz-opacity: 0.8;
+      opacity: .80;
+      filter: alpha(opacity=80);
+    }
 
-#light {
-  display: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  max-width: 600px;
-  max-height: 360px;
-  margin-left: -300px;
-  margin-top: -180px;
-  border: 2px solid #FFF;
-  background: #FFF;
-  z-index: 1002;
-  overflow: visible;
-}
+    #light {
+      display: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      max-width: 600px;
+      max-height: 360px;
+      margin-left: -300px;
+      margin-top: -180px;
+      border: 2px solid #FFF;
+      background: #FFF;
+      z-index: 1002;
+      overflow: visible;
+    }
 
-#boxclose {
-  float: right;
-  cursor: pointer;
-  color: #fff;
-  border: 1px solid #AEAEAE;
-  border-radius: 3px;
-  background: #222222;
-  font-size: 31px;
-  font-weight: bold;
-  display: inline-block;
-  line-height: 0px;
-  padding: 11px 3px;
-  position: absolute;
-  right: 2px;
-  top: 2px;
-  z-index: 1002;
-  opacity: 0.9;
-}
+    #boxclose {
+      float: right;
+      cursor: pointer;
+      color: #fff;
+      border: 1px solid #AEAEAE;
+      border-radius: 3px;
+      background: #222222;
+      font-size: 31px;
+      font-weight: bold;
+      display: inline-block;
+      line-height: 0px;
+      padding: 11px 3px;
+      position: absolute;
+      right: 2px;
+      top: 2px;
+      z-index: 1002;
+      opacity: 0.9;
+    }
 
-.boxclose:before {
-  content: "×";
-}
+    .boxclose:before {
+      content: "×";
+    }
 
-#fade:hover ~ #boxclose {
-  display:none;
-}
+    #fade:hover~#boxclose {
+      display: none;
+    }
 
-.test:hover ~ .test2 {
-  display: none;
-}
-</style>
+    .test:hover~.test2 {
+      display: none;
+    }
+  </style>
 
   <link rel="icon" type="image/png" href="images/logo/logo.png" />
 
@@ -109,7 +109,7 @@
 
           <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
           <!-- <li class="nav-item"><a href="faqs.html" class="nav-link">FAQ's</a></li> -->
-          <li class="nav-item"><a href="contact.html" class="nav-link">Help</a></li>
+          <!-- <li class="nav-item"><a href="contact.html" class="nav-link">Help</a></li> -->
         </ul>
       </div>
     </div>
@@ -164,11 +164,11 @@
           <a class="boxclose" id="boxclose" onclick="lightbox_close();"></a>
           <!-- <video id="VisaChipCardVideo" width="600" controls>
               <source src="https://youtu.be/vvCOSclixJE" type="video/mp4"> -->
-                <iframe width="600" height="400" frameborder="0" allowfullscreen
-                src="https://www.youtube.com/embed/vvCOSclixJE">
-                </iframe>
-              <!--Browser does not support <video> tag -->
-            </video>
+          <iframe width="600" height="400" frameborder="0" allowfullscreen
+            src="https://www.youtube.com/embed/vvCOSclixJE">
+          </iframe>
+          <!--Browser does not support <video> tag -->
+          </video>
         </div>
 
         <div class="col-md-3 d-flex align-self-stretch px-4 ftco-animate">
@@ -180,7 +180,8 @@
               <h3 class="heading">Explore Thapar</h3>
               <p style="font-weight: bold;">Introductory Video</p>
               <p></p>
-              <p><a href="#"  onclick="lightbox_open();" class="btn btn-primary mr-md-4 py-3 px-4" style="margin-top: 90px;">Watch
+              <p><a href="#" onclick="lightbox_open();" class="btn btn-primary mr-md-4 py-3 px-4"
+                  style="margin-top: 90px;">Watch
                   Video<span class="ion-ios-arrow-forward"></span></a></p>
               <a href="pricing.html" class="btn-custom d-flex align-items-center justify-content-center"><span
                   class="fa fa-chevron-right"></span><i class="sr-only">Read more</i></a>
@@ -505,6 +506,19 @@
       <!-- MAP END -->
     </div>
   </section>
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/5f5b2d624704467e89ee0a50/default';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  </script>
+  <!--End of Tawk.to Script-->
 
   <footer class="footer">
     <div class="container">
@@ -596,31 +610,31 @@
     data-cf-settings="7fcabe0204b65ee20594bff5-|49" defer=""></script>
   <script defer src="https://static.cloudflareinsights.com/beacon.min.js"
     data-cf-beacon='{"rayId":"5d06b9d2add2017a","version":"2020.9.0","si":10}'></script>
-<script>
-  window.document.onkeydown = function(e) {
-  if (!e) {
-    e = event;
-  }
-  if (e.keyCode == 27) {
-    lightbox_close();
-  }
-}
+  <script>
+    window.document.onkeydown = function (e) {
+      if (!e) {
+        e = event;
+      }
+      if (e.keyCode == 27) {
+        lightbox_close();
+      }
+    }
 
-function lightbox_open() {
-  var lightBoxVideo = document.getElementById("VisaChipCardVideo");
-  window.scrollTo(0, 0);
-  document.getElementById('light').style.display = 'block';
-  document.getElementById('fade').style.display = 'block';
-  lightBoxVideo.play();
-}
+    function lightbox_open() {
+      var lightBoxVideo = document.getElementById("VisaChipCardVideo");
+      window.scrollTo(0, 0);
+      document.getElementById('light').style.display = 'block';
+      document.getElementById('fade').style.display = 'block';
+      lightBoxVideo.play();
+    }
 
-function lightbox_close() {
-  var lightBoxVideo = document.getElementById("VisaChipCardVideo");
-  document.getElementById('light').style.display = 'none';
-  document.getElementById('fade').style.display = 'none';
-  lightBoxVideo.pause();
-}
-</script>
+    function lightbox_close() {
+      var lightBoxVideo = document.getElementById("VisaChipCardVideo");
+      document.getElementById('light').style.display = 'none';
+      document.getElementById('fade').style.display = 'none';
+      lightBoxVideo.pause();
+    }
+  </script>
 
 </body>
 
