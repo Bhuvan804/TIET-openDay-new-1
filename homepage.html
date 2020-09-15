@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>TIET - Open Day</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+  <link rel="stylesheet" href="css/jquery.timepicker.css">
+  <link rel="stylesheet" href="css/flaticon.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+
+
+  <style>
+    #fade {
+      display: none;
+      position: fixed;
+      top: 0%;
+      left: 0%;
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      z-index: 1001;
+      -moz-opacity: 0.8;
+      opacity: .80;
+      filter: alpha(opacity=80);
+    }
+
+    #light {
+      display: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      max-width: 600px;
+      max-height: 360px;
+      margin-left: -300px;
+      margin-top: -180px;
+      border: 2px solid #FFF;
+      background: #FFF;
+      z-index: 1002;
+      overflow: visible;
+    }
+
+    #boxclose {
+      float: right;
+      cursor: pointer;
+      color: #fff;
+      border: 1px solid #AEAEAE;
+      border-radius: 3px;
+      background: #222222;
+      font-size: 31px;
+      font-weight: bold;
+      display: inline-block;
+      line-height: 0px;
+      padding: 11px 3px;
+      position: absolute;
+      right: 2px;
+      top: 2px;
+      z-index: 1002;
+      opacity: 0.9;
+    }
+
+    .boxclose:before {
+      content: "×";
+    }
+
+    #fade:hover~#boxclose {
+      display: none;
+    }
+
+    .test:hover~.test2 {
+      display: none;
+    }
+  </style>
+
+  <link rel="icon" type="image/png" href="images/logo/logo.png" />
+
+  <!-- VIDEO -->
+  <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/magnific-popup.min.css" rel="stylesheet">
+ -->
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <div class="container">
+      </span><img src="images/logo.jpg" style="width:10%;">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+        aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="fa fa-bars"></span> Menu
+      </button>
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="streams.html" class="nav-link">Engineering Streams</a></li>
+
+          <li class="nav-item"><a href="alumni.html" class="nav-link">Sessions with our Alumni</a></li>
+          <li class="nav-item"><a href="placement.html" class="nav-link">Placements</a></li>
+
+
+          <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <!-- <li class="nav-item"><a href="faqs.html" class="nav-link">FAQ's</a></li> -->
+          <!-- <li class="nav-item"><a href="contact.html" class="nav-link">Help</a></li> -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--<div class="hero-wrap js-fullheight" style="background-image: url('images/cos.png');padding-bottom: 100px;" data-stellar-background-ratio="0.5">
+<div class="overlay"></div>
+<div class="container">
+<div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center" data-scrollax-parent="true">-->
+  <div class="col-md-11 ftco-animate text-center">
+    <h1 class="mb-4"><img src="images/tu.png" style="width:30%;margin-left: 0px;padding-left: 0px;"> </h1>
+    <!--<p><a href="#" class="btn btn-primary mr-md-4 py-3 px-4">Learn more <span class="ion-ios-arrow-forward"></span></a></p>-->
+  </div>
+<!-- ========================================================================================================================== -->
+
+
+<div style="text-align: center;font-family: 'Roboto Mono', monospace;">
+  
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Register Here!
+</button>
+
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="column" id="main">
+          <h1>Register </h1>
+          <h3>Registration-TIET Open Day</h3>
+          <form>
+            <div class="form-group">
+              <label for="exampleInputName"><strong> Name</strong></label>
+              <input type="name" class="form-control" id="exampleInputName" placeholder="Name">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1"><strong> E-mail</strong> </label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="E-mail">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1"><strong>Phone No.</strong></label>
+              <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Phone Number">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1"><strong>Branch</strong></label>
+              <input type="text" class="form-control" id="exampleInputPassword1" placeholder="COE">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+        <div>
+          <?xml version="1.0" encoding="UTF-8"?>
+          <svg width="67px" height="578px" viewBox="0 0 67 578" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+              <title>Path</title>
+              <desc>Created with Sketch.</desc>
+              <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <path d="M11.3847656,-5.68434189e-14 C-7.44726562,36.7213542 5.14322917,126.757812 49.15625,270.109375 C70.9827986,341.199016 54.8877465,443.829224 0.87109375,578 L67,578 L67,-5.68434189e-14 L11.3847656,-5.68434189e-14 Z" id="Path" fill="#F9BC35"></path>
+              </g>
+          </svg>
+        </div>
+        <div class="column" id="secondary">
+          <div class="sec-content">
+            <h2>Already Registered?</h2>
+            <h3>Continue to the site</h3>
+            <!-- <button href="index.html" type="button" class="btn btn-primary">TIET-Open Day</button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<!-- ========================================================================================================================== -->
+  <section class="ftco-section bg-light ftco-no-pt ftco-intro">
+    <div class="container">
+      <div class="row">
+      	<div id="light">
+          <a class="boxclose" id="boxclose" onclick="lightbox_close();"></a>
+          <!-- <video id="VisaChipCardVideo" width="600" controls>
+              <source src="https://youtu.be/vvCOSclixJE" type="video/mp4"> -->
+          <iframe width="600" height="400" frameborder="0" allowfullscreen
+            src="https://www.youtube.com/embed/vvCOSclixJE">
+          </iframe>
+          <!--Browser does not support <video> tag -->
+          </video>
+        </div>
+
+        <div class="col-md-3 d-flex align-self-stretch px-4 ftco-animate">
+          <div class="d-block services text-center">
+            <div class="icon d-flex align-items-center justify-content-center">
+              <img src="images/explore1.png" style="width:80%;">
+            </div>
+            <div class="media-body">
+              <h3 class="heading">Explore Thapar</h3>
+              <p style="font-weight: bold;">Introductory Video</p>
+              <p></p>
+              <p><a href="#" onclick="lightbox_open();" class="btn btn-primary mr-md-4 py-3 px-4"
+                  style="margin-top: 90px;">Watch
+                  Video<span class="ion-ios-arrow-forward"></span></a></p>
+              <a href="gallery.html" class="btn-custom d-flex align-items-center justify-content-center"><span
+                  class="fa fa-chevron-right"></span><i class="sr-only">Read more</i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 d-flex align-self-stretch px-4 ftco-animate">
+          <div class="d-block services  text-center">
+            <div class="icon d-flex align-items-center justify-content-center">
+              <img src="images/es.png" style="width:130%;">
+            </div>
+            <div class="media-body">
+              <h3 class="heading">Streams</h3>
+              <p style="font-weight: bold;">ENGINEERING STREAMS</p>
+              <p>Explore Different Streams</p>
+              <p><a href="streams.html" class="btn btn-primary mr-md-4 py-3 px-4">Streams & Branches<span
+                    class="ion-ios-arrow-forward"></span></a></p>
+              <a href="streams.html" class="btn-custom d-flex align-items-center justify-content-center"><span
+                  class="fa fa-chevron-right"></span><i class="sr-only">Read more</i></a>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 d-flex align-self-stretch px-4 ftco-animate">
+          <div class="d-block services text-center">
+            <div class="icon d-flex align-items-center justify-content-center">
+              <img src="images/alumni.png" style="width:110%;">
+            </div>
+            <div class="media-body">
+              <h3 class="heading">Thapar Alumni</h3>
+              <p style="font-weight: bold;">ATTEND SESSIONS BY OUR ALUMNI</p>
+
+              <p><a href="alumni.html" class="btn btn-primary mr-md-3 py-3 px-4" style="margin-top:65px;">Sessions by
+                  Alumni <span class="ion-ios-arrow-forward"></span></a></p>
+              <a href="alumni.html" class="btn-custom d-flex align-items-center justify-content-center"><span
+                  class="fa fa-chevron-right"></span><i class="sr-only">Read more</i></a>
+            </div>
+          </div>
+        </div>
+        
+
+        <div class="col-md-3 d-flex align-self-stretch px-4 ftco-animate">
+          <div class="d-block services text-center">
+            <div class="icon d-flex align-items-center justify-content-center">
+              <img src="images/help.png" style="width:140%;">
+            </div>
+            <div class="media-body">
+              <h3 class="heading">Placements</h3>
+              <p style="font-weight: bold;">Know more about data-placement at Thapar</p>
+              <!-- <p>Have any doubts regarding the placements?</p> -->
+              <p><a href="placement.html" class="btn btn-primary mr-md-4 py-3 px-4" style="margin-top: 40px;">Contact Placements<span
+                    class="ion-ios-arrow-forward"></span></a></p>
+              <a href="placement.html" class="btn-custom d-flex align-items-center justify-content-center"><span
+                  class="fa fa-chevron-right"></span><i class="sr-only">Read more</i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+  <!-- <h1>CSS/Javascript popup with Lightbox effect</h1>
+
+<div id="light">
+  <a class="boxclose" id="boxclose" onclick="lightbox_close();"></a>
+  <video id="VisaChipCardVideo" width="600" controls>
+      <source src="https://drive.google.com/file/d/1v8c64sDBmh4yiTweG83bCyxbJNyMdyY7/view?usp=sharing" type="video/mp4">
+      Browser does not support <video> tag 
+    </video>
+</div>
+
+<div id="fade" onClick="lightbox_close();"></div>
+
+<div>
+  <a href="#" onclick="lightbox_open();">Watch video</a>
+</div>
+
+<div class="test">test</div>
+<div class="test2">test2</div>
+ -->
+  <!-- 
+
+
+<video>
+    <source src="https://drive.google.com/file/d/1v8c64sDBmh4yiTweG83bCyxbJNyMdyY7/view?usp=sharing" type='video/mp4'>
+</video>
+
+
+ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <section class="ftco-counter" id="section-counter">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
+          <div class="block-18 text-center">
+            <div class="text">
+              <strong class="number" data-number="250">0</strong>
+            </div>
+            <div class="text">
+              <span>Acres Campus </span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
+          <div class="block-18 text-center">
+            <div class="text">
+              <strong class="number" data-number="9500">0</strong>
+            </div>
+            <div class="text">
+              <span>Students</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
+          <div class="block-18 text-center">
+            <div class="text">
+              <strong class="number" data-number="66">0</strong>
+            </div>
+            <div class="text">
+              <span>Years of Excellence</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
+          <div class="block-18 text-center">
+            <div class="text">
+              <strong class="number" data-number="16">0</strong>
+            </div>
+            <div class="text">
+              <span>Centres</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ftco-section testimony-section" style="background-image: url('images/thapar3.jpg');">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row justify-content-center pb-5 mb-3">
+        <div class="col-md-7 heading-section text-center ftco-animate">
+          <h2>Message From Head</h2>
+        </div>
+      </div>
+      <div class="row ftco-animate">
+        <div class="col-md-12">
+          <div class="carousel-testimony owl-carousel ftco-owl">
+            <div class="item">
+              <div class="testimony-wrap py-4">
+                <div class="icon d-flex align-items-center justify-content-center"><span
+                    class="fa fa-quote-left"></span></div>
+                <div class="text">
+                  <p class="mb-4">Our aim is to educate the brilliant youth towards world-class education and to enable
+                    them to contribute to the development of our society. </p>
+                  <br><br>
+                  <div class="d-flex align-items-center">
+                    <div class="user-img" style="background-image: url(images/eced.jpg)"></div>
+                    <div class="pl-3">
+                      <p class="name">Dr. Alpana Agarwal</p>
+                      <span class="position">HOD,ECED</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="testimony-wrap py-4">
+                <div class="icon d-flex align-items-center justify-content-center"><span
+                    class="fa fa-quote-left"></span></div>
+                <div class="text">
+                  <p class="mb-4">Our vision is to be a leading establishment excelling in higher education and research
+                    in the field of Electrical Engineering to meet the aspirations of global community. </p>
+                  <br>
+                  <div class="d-flex align-items-center">
+                    <div class="user-img" style="background-image: url(images/ele.png)"></div>
+                    <div class="pl-3">
+                      <p class="name">Dr. R. S. Kaler</p>
+                      <span class="position">HOD, ELED</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="testimony-wrap py-4">
+                <div class="icon d-flex align-items-center justify-content-center"><span
+                    class="fa fa-quote-left"></span></div>
+                <div class="text">
+                  <p class="mb-4">We prepare our students to conceptualize, design, implement facilities meant for
+                    catering societal needs for today and tomorrow, and that is how students understand what civil
+                    engineering is all about.</p>
+
+                  <div class="d-flex align-items-center">
+                    <div class="user-img" style="background-image: url(images/civil.jpg)"></div>
+                    <div class="pl-3">
+                      <p class="name">Dr. Prem Pal Bansal</p>
+                      <span class="position">HOD,CED</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="testimony-wrap py-4">
+                <div class="icon d-flex align-items-center justify-content-center"><span
+                    class="fa fa-quote-left"></span></div>
+                <div class="text">
+                  <p class="mb-4">By joining the Department of Chemical Engineering, you will become part of an
+                    outstanding legacy and an enriching graduate program that will specialize you in highly sought after
+                    disciplines such as Chemical Engineering.</p>
+                  <div class="d-flex align-items-center">
+                    <div class="user-img" style="background-image: url(images/che.jpg)"></div>
+                    <div class="pl-3">
+                      <p class="name">Dr. Haripada Bhunia</p>
+                      <span class="position">HOD, CHED</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="testimony-wrap py-4">
+                <div class="icon d-flex align-items-center justify-content-center"><span
+                    class="fa fa-quote-left"></span></div>
+                <div class="text">
+                  <p class="mb-4">Biotechnology is a discipline that has emerged in recent times and promises to solve
+                    problems related to human health, agriculture, and industry. </p>
+                  <br><br>
+                  <div class="d-flex align-items-center">
+                    <div class="user-img" style="background-image: url(images/bio.jpg)"></div>
+                    <div class="pl-3">
+                      <p class="name">Prof. M. S. Reddy</p>
+                      <span class="position">HOD, BTD</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="testimony-wrap py-4">
+                <div class="icon d-flex align-items-center justify-content-center"><span
+                    class="fa fa-quote-left"></span></div>
+                <div class="text">
+                  <p class="mb-4">Mechanical Engineers use the principles of science and knowledge of materials, design
+                    and manufacturing to continuously develop new technologies and products. </p>
+                  <br>
+                  <div class="d-flex align-items-center">
+                    <div class="user-img" style="background-image: url(images/mech.jpg)"></div>
+                    <div class="pl-3">
+                      <p class="name">Dr. T.P. Singh</p>
+                      <span class="position">HOD, MED</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="testimony-wrap py-4">
+                <div class="icon d-flex align-items-center justify-content-center"><span
+                    class="fa fa-quote-left"></span></div>
+                <div class="text">
+                  <p class="mb-4">I am delighted that you are showcasing your interest to know more about us, virtue
+                    being this web presence. This web-site holds information for all the stakeholders.</p>
+                  <br>
+                  <div class="d-flex align-items-center">
+                    <div class="user-img" style="background-image: url(images/cse.jpg)"></div>
+                    <div class="pl-3">
+                      <p class="name">Dr. Maninder Singh</p>
+                      <span class="position">HOD, CSED</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+  <!-- MAP START -->
+  <section id="dept" class="team-area p-relative pt-120 pb-120 fix">
+    <div class="section-t team-t paroller" data-paroller-factor="0.15" data-paroller-factor-lg="0.15"
+      data-paroller-factor-md="0.15" data-paroller-factor-sm="0.15" data-paroller-type="foreground"
+      data-paroller-direction="horizontal">
+      <!-- <h2>TI Map</h2> -->
+    </div>
+    <div class="circal1 item-zoom-inout"></div>
+    <div class="circal2 item-zoom-inout"></div>
+    <div class="circal3 item-zoom-inout"></div>
+    <div class="circal4 item-zoom-inout"></div>
+    <div class="container">
+      <div class="row justify-content-center" style="padding-top:100px;padding-bottom:50px">
+        <div class="col-xl-6 col-lg-8">
+          <div class="section-title text-center mb-80">
+            <span class="wow fadeInUp animated" data-animation="fadeInUp animated" data-delay=".2s"><strong>Eagle Eye
+                View</strong></span>
+            <h1 class="wow fadeInUp animated" data-animation="fadeInUp animated" data-delay=".4s">Thapar - Map</h1>
+          </div>
+        </div>
+      </div>
+
+      <!-- start copy from here  -->
+      <!-- image map area starts  -->
+      <div class="container" style="padding-bottom:100px;">
+        <img class="newmap" src="images/newmap2.png" alt="map" usemap="#map" />
+        <map name="map">
+          <area shape="poly" coords="3898,2655,3888,2292,4276,2282,4271,2670" alt="directorate" href="test.html" />
+          <area target="" alt="library" title="library" href="" coords="3604,1814,3873,1824,3888,2113,3599,2103"
+            shape="poly" />
+          <area target="" alt="csed" title="csed" href="" coords="3913,1840,4236,1825,4211,2069,3918,2069"
+            shape="poly" />
+          <area target="" alt="med" title="med" href="" coords="4495,2150,4813,2130,4823,2408,4515,2408" shape="poly" />
+          <area target="" alt="girl hostel" title="girl hostel" href="" coords="3335,1479,3719,1489,3719,1778,3325,1778"
+            shape="poly" />
+          <area target="" alt="cos" title="cos" href="" coords="2251,863,2559,844,2564,1137,2251,1097" shape="poly" />
+        </map>
+        <script>
+          imageMapResize();
+        </script>
+      </div>
+      <!-- image map area ends -->
+
+
+
+      <!-- MAP END -->
+    </div>
+  </section>
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/5f5b2d624704467e89ee0a50/default';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  </script>
+  <!--End of Tawk.to Script-->
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+          <h2 class="footer-heading">Thapar Institute of Engineering & Technology</h2>
+          <p>The Thapar Institute of Engineering and Technology (TIET) is one of India's oldest and finest educational
+            institutions, which provides a steady source of highly skilled talent to the nation as well as overseas.</p>
+          <ul class="ftco-footer-social p-0">
+            <li class="ftco-animate"><a
+                href="https://twitter.com/TIETofficial?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                data-toggle="tooltip" data-placement="top" title="Twitter"><span class="fa fa-twitter"></span></a></li>
+            <li class="ftco-animate"><a href="https://www.facebook.com/officialTIET/" data-toggle="tooltip"
+                data-placement="top" title="Facebook"><span class="fa fa-facebook"></span></a></li>
+            <li class="ftco-animate"><a href="https://www.instagram.com/tietofficial/?hl=en" data-toggle="tooltip"
+                data-placement="top" title="Instagram"><span class="fa fa-instagram"></span></a></li>
+            <!-- thapar link -->
+            <li class="ftco-animate"><a href="http://www.thapar.edu/" data-toggle="tooltip" data-placement="top"
+                title="Thapar Homepage"><span class="fa fa-home"></span></a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+        </div>
+
+        <div class="col-md-6 col-lg-3 pl-lg-5 mb-4 mb-md-0">
+        </div>
+
+        <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+
+          <h2 class="footer-heading">Quick Links</h2>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="py-2 d-block">Home</a></li>
+            <li><a href="streams.html" class="py-2 d-block">Engineering Streams</a></li>
+            <li><a href="alumni.html" class="py-2 d-block">Sessions by Alumni</a></li>
+            <li><a href="placement.html" class="py-2 d-block">Placements</a></li>
+            <li><a href="gallery.html" class="py-2 d-block">Gallery</a></li>
+            <li><a href="http://www.thapar.edu/" class="py-2 d-block">Thapar Official Website</a></li>
+<!--             <li><a href="#" class="py-2 d-block">FAQ's</a></li>
+            <li><a href="#" class="py-2 d-block">HelpContact</a></li>
+ -->          </ul>
+
+
+        </div>
+        <div class="row mt-5">
+          <div class="col-md-12 text-center" style="padding-left:450px;">
+            <p class="copyright">
+              Copyright &copy;
+              <script data-cfasync="false"
+                src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+              <script type="7fcabe0204b65ee20594bff5-text/javascript">document.write(new Date().getFullYear());</script>
+              All rights reserved
+            </p>
+          </div>
+        </div>
+      </div>
+  </footer>
+
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+      <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+      <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+        stroke="#F96D00" /></svg></div>
+  <script src="js/jquery.min.js" type="7fcabe0204b65ee20594bff5-text/javascript"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js" type="7fcabe0204b65ee20594bff5-text/javascript"></script>
+  <script src="js/popper.min.js" type="7fcabe0204b65ee20594bff5-text/javascript"></script>
+  <script src="js/bootstrap.min.js" type="7fcabe0204b65ee20594bff5-text/javascript"></script>
+  <script src="js/jquery.easing.1.3.js" type="7fcabe0204b65ee20594bff5-text/javascript"></script>
+  <script src="js/jquery.waypoints.min.js" type="7fcabe0204b65ee20594bff5-text/javascript"></script>
+  <script src="js/jquery.stellar.min.js" type="7fcabe0204b65ee20594bff5-text/javascript"></script>
+  <script src="js/jquery.animateNumber.min.js" type="7fcabe0204b65ee20594bff5-text/javascript"></script>
+  <script src="js/bootstrap-datepicker.js" type="7fcabe0204b65ee20594bff5-text/javascript"></script>
+  <script src="js/jquery.timepicker.min.js" type="7fcabe0204b65ee20594bff5-text/javascript"></script>
+  <script src="js/owl.carousel.min.js" type="7fcabe0204b65ee20594bff5-text/javascript"></script>
+  <script src="js/jquery.magnific-popup.min.js" type="7fcabe0204b65ee20594bff5-text/javascript"></script>
+  <script src="js/scrollax.min.js" type="7fcabe0204b65ee20594bff5-text/javascript"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"
+    type="7fcabe0204b65ee20594bff5-text/javascript"></script>
+  <script src="js/google-map.js" type="7fcabe0204b65ee20594bff5-text/javascript"></script>
+  <script src="js/main.js" type="7fcabe0204b65ee20594bff5-text/javascript"></script>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"
+    type="7fcabe0204b65ee20594bff5-text/javascript"></script>
+  <script type="7fcabe0204b65ee20594bff5-text/javascript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+  <script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js"
+    data-cf-settings="7fcabe0204b65ee20594bff5-|49" defer=""></script>
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js"
+    data-cf-beacon='{"rayId":"5d06b9d2add2017a","version":"2020.9.0","si":10}'></script>
+  <script>
+    window.document.onkeydown = function (e) {
+      if (!e) {
+        e = event;
+      }
+      if (e.keyCode == 27) {
+        lightbox_close();
+      }
+    }
+
+    function lightbox_open() {
+      var lightBoxVideo = document.getElementById("VisaChipCardVideo");
+      window.scrollTo(0, 0);
+      document.getElementById('light').style.display = 'block';
+      document.getElementById('fade').style.display = 'block';
+      lightBoxVideo.play();
+    }
+
+    function lightbox_close() {
+      var lightBoxVideo = document.getElementById("VisaChipCardVideo");
+      document.getElementById('light').style.display = 'none';
+      document.getElementById('fade').style.display = 'none';
+      lightBoxVideo.pause();
+    }
+  </script>
+
+</body>
+
+</html>
