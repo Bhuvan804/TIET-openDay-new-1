@@ -34,23 +34,23 @@
         <button onclick="openLoginInfo();" class='b b-form i i-more' title='Help'></button>
           <p class='field'>
           <label for='user'>NAME</label>
-          <input type='text' id='name' name='user'  title='Username' required/>
+          <input type='text' id='name' name='name'  title='Username' required/>
           <span id='valida' class='i i-warning'></span>
         </p>
          
           <p class='field'>
           <label for='user'>E-MAIL</label>
-          <input type='text' id='user' name='user'  title='Username'  />
+          <input type='text' id='email' name='email'  title='Username'  />
           <span id='valida' class='i i-warning'></span>
         </p>
           <p class='field'>
           <label for='pass'>PHONE NUMBER</label>
-          <input type='text' id='pass' name='pass'  title='Password'/>
+          <input type='text' id='phone' name='phone'  title='Password'/>
           <span id='valida' class='i i-close'></span>
         </p>
         <p class='field'>
           <label for='pass'>BRANCH</label>
-          <input type='text' id='pass' placeholder="COE" name='pass' title='Password'/>
+          <input type='text' id='branch' placeholder="COE" name='branch' title='Password'/>
           <span id='valida' class='i i-close'></span>
         </p>
 
@@ -183,9 +183,25 @@ $(window).on('resize', function(){
       closeLoginInfo();
 });
 
- </script>
-<script type="text/javascript">
-  document.getElementById('name').validity.valid
+
+</script>
+
+	<script>
+
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyt6-9k4vJZUxkK4XmTrv54MfmnZY7SD6H1zAhc2YJ4sTki0MI/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const loading = document.querySelector('.spinner-grow')
+  const success = document.querySelector('#success-message')
+  const body = document.querySelector('.body')
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    showLoadingIndicator()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+      .then(response => showSuccessMessage(response))
+      .catch(error => console.error('Error!', error.message))
+  })
+
 </script>
 
 </script>
