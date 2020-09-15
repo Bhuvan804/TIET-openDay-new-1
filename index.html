@@ -21,6 +21,8 @@
 
 <body>
 
+<!-- <form  action="/homepage.html"> -->
+  
 <div class='box'>
   <div class='box-form'>
     <div class='box-login-tab'></div>
@@ -29,26 +31,26 @@
     </div>
     <div class='box-login'>
       <div class='fieldset-body' id='login_form'>
-        <button onclick="openLoginInfo();" class='b b-form i i-more' title='Mais Informações'></button>
+        <button onclick="openLoginInfo();" class='b b-form i i-more' title='Help'></button>
           <p class='field'>
           <label for='user'>NAME</label>
-          <input type='text' id='user' name='user' placeholder="Bhuvan Shukla" title='Username' />
+          <input type='text' id='name' name='user'  title='Username' required/>
           <span id='valida' class='i i-warning'></span>
         </p>
          
           <p class='field'>
           <label for='user'>E-MAIL</label>
-          <input type='text' id='user' name='user' placeholder="abc@gmail.com" title='Username' />
+          <input type='text' id='user' name='user'  title='Username'  />
           <span id='valida' class='i i-warning'></span>
         </p>
           <p class='field'>
           <label for='pass'>PHONE NUMBER</label>
-          <input type='text' id='pass' name='pass' placeholder="Phone Number" title='Password' />
+          <input type='text' id='pass' name='pass'  title='Password'/>
           <span id='valida' class='i i-close'></span>
         </p>
         <p class='field'>
           <label for='pass'>BRANCH</label>
-          <input type='text' id='pass' placeholder="COE" name='pass' title='Password' />
+          <input type='text' id='pass' placeholder="COE" name='pass' title='Password'/>
           <span id='valida' class='i i-close'></span>
         </p>
 
@@ -56,10 +58,8 @@
             <input type='checkbox' checked value='TRUE' title='Keep me Signed in' /> Keep me Signed in
           </label>
 
-          <a href="homepage.html">
-            
-            <input type='submit' id='do_login' value='GET STARTED' title='Get Started' />
-          
+          <a href="home.html">
+            <input type='submit' id="mybutton" value='GET STARTED' title='Get Started' />
           </a>
       </div>
     </div>
@@ -74,6 +74,9 @@
     <button onclick="" class='b-cta' title='Sign up now!'> Already Registered?</button>
           </div>
 </div>
+
+<!-- </form> -->
+
 
 
 <script src="js/jquery.min.js" type="7fcabe0204b65ee20594bff5-text/javascript"></script>
@@ -181,7 +184,11 @@ $(window).on('resize', function(){
 });
 
  </script>
+<script type="text/javascript">
+  document.getElementById('name').validity.valid
+</script>
 
+</script>
 </body>
 
 </html>
