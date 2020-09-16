@@ -224,7 +224,7 @@ $('.tab a').on('click', function (e) {
 
 </script>
 
-	<!-- <script>
+	<script>
 
   const scriptURL = 'https://script.google.com/macros/s/AKfycbw_DgWXXYNyFWkMRSkyOrtfLbLBSPoVw9IVTq60qK_Hd-Pki41S/exec'
   const form = document.forms['submit-to-google-sheet']
@@ -236,12 +236,12 @@ $('.tab a').on('click', function (e) {
     e.preventDefault()
     //showLoadingIndicator()
     fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-      .then(response => console.log(response))
+      .then(response => window.location.replace("http://www.sidhantgoyal.me/TIET-openDay-new/home.html"))
       .catch(error => console.error('Error!', error.message))
   })
 
 </script>
- -->
+
 
 
 
