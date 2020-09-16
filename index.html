@@ -17,6 +17,64 @@
   <link rel="stylesheet" href="css/flaticon.css">
   <link rel="stylesheet" href="css/registerstyle.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="images/logo/logo.png" />
+
+
+<!-- MULTI SELECT -->
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<!-- Google Fonts -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+
+<link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+
+
+
+
+<!-- MULTI SELECT 2 -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/css/bootstrap.min.css"
+        rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <link href="http://cdn.rawgit.com/davidstutz/bootstrap-multiselect/master/dist/css/bootstrap-multiselect.css"
+        rel="stylesheet" type="text/css" />
+    <script src="http://cdn.rawgit.com/davidstutz/bootstrap-multiselect/master/dist/js/bootstrap-multiselect.js"
+        type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('#lstFruits').multiselect({
+                includeSelectAllOption: true
+            });
+            $('#btnSelected').click(function () {
+                var selected = $("#lstFruits option:selected");
+                var message = "";
+                selected.each(function () {
+                    message += $(this).text() + " " + $(this).val() + "\n";
+                });
+                alert(message);
+            });
+        });
+    </script>
+    
+
+
+
+
+
+
 </head>
 
 <body>
@@ -33,7 +91,7 @@
     </head>
     <body>
 
-      <form action="home.html" method="post">
+      <form action="home.html" method="post" name = "submit-to-google-sheet">
       
         <h1>TIET-Open Day</h1>
         
@@ -51,40 +109,142 @@
           <label for="fname">Father's Name:</label>
           <input type="text" id="fname" name="f_name" required>
 
-
-
+<div>
+<label><em> Branch of Interest:</em></label>
+	
+</div>
+<!-- 1 -->
 
            <!-- <fieldset> -->
-        <label for="job">Branch of Interest:</label>
-        <select id="job" name="user_job" required>
+        <label for="job">Preference 1</label>
+        <!-- <select id="job" name="user_job"  multiple="multiple"> -->
+        <select id="job" name="user_job" >
           <optgroup label="Bio">
-            <option value="frontend_developer">Biomedical Engineering (BME)</option>
-            <option value="php_developor">Biotechnology (BT)</option>
+            <option value="Biomedical Engineering (BME)">Biomedical Engineering (BME)</option>
+            <option value="Biotechnology (BT)">Biotechnology (BT)</option>
            <!--  <option value="python_developer">Python Developer</option>
             <option value="rails_developer"> Rails Developer</option>
             <option value="web_designer">Web Designer</option>
             <option value="WordPress_developer">WordPress Developer</option> -->
           </optgroup>
           <optgroup label="BE">
-            <option value="Android_developer">Chemical Engineering (CHE)</option>
-            <option value="iOS_developer">Civil Engineering (CIE)</option>
-            <option value="mobile_designer">Computer Science & Business System (COBS)</option>
-			<option value="iOS_developer">Computer Engineering (COE)</option>
-            <option value="iOS_developer">Computer Science & Engineering (Patiala) (COPC)</option>
-            <option value="iOS_developer">Computer Science & Engineering (Derabassi) (COSE)</option>
-            <option value="iOS_developer">Electronics & Communication Engineering (ECE)</option>
-            <option value="iOS_developer">Electrical & Computer Engineering (ELC)</option>
-            <option value="iOS_developer">Electronics (Instrumentation & Control) Engineering (EIC)</option>
-            <option value="iOS_developer">Electrical Engineering (ELE)</option>
-            <option value="iOS_developer">Electronics & Computer Engineering (ENC)</option>
-            <option value="iOS_developer">Mechatronics (MEC)</option>
-            <option value="iOS_developer">Mechanical Engineering (MEE)</option>
-            <option value="iOS_developer">Mechanical Engineering (Production) (MPE)</option>
+            <option value="Chemical Engineering (CHE)">Chemical Engineering (CHE)</option>
+            <option value="Civil Engineering (CIE)">Civil Engineering (CIE)</option>
+            <option value="Computer Science & Business System (COBS)">Computer Science & Business System (COBS)</option>
+			<option value="Computer Engineering (COE)">Computer Engineering (COE)</option>
+            <option value="Computer Science & Engineering (Patiala) (COPC)">Computer Science & Engineering (Patiala) (COPC)</option>
+            <option value="Computer Science & Engineering (Derabassi) (COSE)">Computer Science & Engineering (Derabassi) (COSE)</option>
+            <option value="Electronics & Communication Engineering (ECE)">Electronics & Communication Engineering (ECE)</option>
+            <option value="Electrical & Computer Engineering (ELC)">Electrical & Computer Engineering (ELC)</option>
+            <option value="Electronics (Instrumentation & Control) Engineering (EIC)">Electronics (Instrumentation & Control) Engineering (EIC)</option>
+            <option value="Electrical Engineering (ELE)">Electrical Engineering (ELE)</option>
+            <option value="Electronics & Computer Engineering (ENC)">Electronics & Computer Engineering (ENC)</option>
+            <option value="Mechatronics (MEC)">Mechatronics (MEC)</option>
+            <option value="Mechanical Engineering (MEE)">Mechanical Engineering (MEE)</option>
+            <option value="Mechanical Engineering (Production) (MPE)">Mechanical Engineering (Production) (MPE)</option>
                       
           </optgroup>
           <optgroup label="Dual Degree BE-MBA">
-            <option value="business_owner">Electronics & Communication Engineering (BEMBA-ECE)</option>
-            <option value="freelancer">Mechanical Engineering (BEMBA-MEE)</option>
+            <option value="Electronics & Communication Engineering (BEMBA-ECE)">Electronics & Communication Engineering (BEMBA-ECE)</option>
+            <option value="Mechanical Engineering (BEMBA-MEE)">Mechanical Engineering (BEMBA-MEE)</option>
+          </optgroup>
+          <!-- <optgroup label="Other">
+            <option value="secretary">Secretary</option>
+            <option value="maintenance">Maintenance</option>
+          </optgroup> -->
+        </select>
+        
+
+
+
+
+
+
+
+
+
+
+
+           <!-- <fieldset> -->
+        <label for="job">Preference 2</label>
+        <!-- <select id="job" name="user_job"  multiple="multiple"> -->
+        <select id="job" name="user_job" >
+          <optgroup label="Bio">
+            <option value="Biomedical Engineering (BME)">Biomedical Engineering (BME)</option>
+            <option value="Biotechnology (BT)">Biotechnology (BT)</option>
+           <!--  <option value="python_developer">Python Developer</option>
+            <option value="rails_developer"> Rails Developer</option>
+            <option value="web_designer">Web Designer</option>
+            <option value="WordPress_developer">WordPress Developer</option> -->
+          </optgroup>
+          <optgroup label="BE">
+            <option value="Chemical Engineering (CHE)">Chemical Engineering (CHE)</option>
+            <option value="Civil Engineering (CIE)">Civil Engineering (CIE)</option>
+            <option value="Computer Science & Business System (COBS)">Computer Science & Business System (COBS)</option>
+			<option value="Computer Engineering (COE)">Computer Engineering (COE)</option>
+            <option value="Computer Science & Engineering (Patiala) (COPC)">Computer Science & Engineering (Patiala) (COPC)</option>
+            <option value="Computer Science & Engineering (Derabassi) (COSE)">Computer Science & Engineering (Derabassi) (COSE)</option>
+            <option value="Electronics & Communication Engineering (ECE)">Electronics & Communication Engineering (ECE)</option>
+            <option value="Electrical & Computer Engineering (ELC)">Electrical & Computer Engineering (ELC)</option>
+            <option value="Electronics (Instrumentation & Control) Engineering (EIC)">Electronics (Instrumentation & Control) Engineering (EIC)</option>
+            <option value="Electrical Engineering (ELE)">Electrical Engineering (ELE)</option>
+            <option value="Electronics & Computer Engineering (ENC)">Electronics & Computer Engineering (ENC)</option>
+            <option value="Mechatronics (MEC)">Mechatronics (MEC)</option>
+            <option value="Mechanical Engineering (MEE)">Mechanical Engineering (MEE)</option>
+            <option value="Mechanical Engineering (Production) (MPE)">Mechanical Engineering (Production) (MPE)</option>
+                      
+          </optgroup>
+          <optgroup label="Dual Degree BE-MBA">
+            <option value="Electronics & Communication Engineering (BEMBA-ECE)">Electronics & Communication Engineering (BEMBA-ECE)</option>
+            <option value="Mechanical Engineering (BEMBA-MEE)">Mechanical Engineering (BEMBA-MEE)</option>
+          </optgroup>
+          <!-- <optgroup label="Other">
+            <option value="secretary">Secretary</option>
+            <option value="maintenance">Maintenance</option>
+          </optgroup> -->
+        </select>
+        
+
+
+
+
+
+
+
+
+
+           <!-- <fieldset> -->
+        <label for="job">Preference 3</label>
+        <!-- <select id="job" name="user_job"  multiple="multiple"> -->
+        <select id="job" name="user_job" >
+          <optgroup label="Bio">
+            <option value="Biomedical Engineering (BME)">Biomedical Engineering (BME)</option>
+            <option value="Biotechnology (BT)">Biotechnology (BT)</option>
+           <!--  <option value="python_developer">Python Developer</option>
+            <option value="rails_developer"> Rails Developer</option>
+            <option value="web_designer">Web Designer</option>
+            <option value="WordPress_developer">WordPress Developer</option> -->
+          </optgroup>
+          <optgroup label="BE">
+            <option value="Chemical Engineering (CHE)">Chemical Engineering (CHE)</option>
+            <option value="Civil Engineering (CIE)">Civil Engineering (CIE)</option>
+            <option value="Computer Science & Business System (COBS)">Computer Science & Business System (COBS)</option>
+			<option value="Computer Engineering (COE)">Computer Engineering (COE)</option>
+            <option value="Computer Science & Engineering (Patiala) (COPC)">Computer Science & Engineering (Patiala) (COPC)</option>
+            <option value="Computer Science & Engineering (Derabassi) (COSE)">Computer Science & Engineering (Derabassi) (COSE)</option>
+            <option value="Electronics & Communication Engineering (ECE)">Electronics & Communication Engineering (ECE)</option>
+            <option value="Electrical & Computer Engineering (ELC)">Electrical & Computer Engineering (ELC)</option>
+            <option value="Electronics (Instrumentation & Control) Engineering (EIC)">Electronics (Instrumentation & Control) Engineering (EIC)</option>
+            <option value="Electrical Engineering (ELE)">Electrical Engineering (ELE)</option>
+            <option value="Electronics & Computer Engineering (ENC)">Electronics & Computer Engineering (ENC)</option>
+            <option value="Mechatronics (MEC)">Mechatronics (MEC)</option>
+            <option value="Mechanical Engineering (MEE)">Mechanical Engineering (MEE)</option>
+            <option value="Mechanical Engineering (Production) (MPE)">Mechanical Engineering (Production) (MPE)</option>
+                      
+          </optgroup>
+          <optgroup label="Dual Degree BE-MBA">
+            <option value="Electronics & Communication Engineering (BEMBA-ECE)">Electronics & Communication Engineering (BEMBA-ECE)</option>
+            <option value="Mechanical Engineering (BEMBA-MEE)">Mechanical Engineering (BEMBA-MEE)</option>
           </optgroup>
           <!-- <optgroup label="Other">
             <option value="secretary">Secretary</option>
@@ -111,7 +271,24 @@
           <textarea id="bio" name="user_bio"></textarea>
         </fieldset>
         --> 
-        	<input class="button2" type="submit" value="Get Started" name="">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <input class="button2" type="submit" value="Get Started" name="">
+          <!-- <button class="button2" type="submit">Get Started</button> -->
 
       </form>
       
@@ -224,7 +401,7 @@ $('.tab a').on('click', function (e) {
 
 	<script>
 
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbyt6-9k4vJZUxkK4XmTrv54MfmnZY7SD6H1zAhc2YJ4sTki0MI/exec'
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbw_DgWXXYNyFWkMRSkyOrtfLbLBSPoVw9IVTq60qK_Hd-Pki41S/exec'
   const form = document.forms['submit-to-google-sheet']
   const loading = document.querySelector('.spinner-grow')
   const success = document.querySelector('#success-message')
@@ -232,14 +409,13 @@ $('.tab a').on('click', function (e) {
 
   form.addEventListener('submit', e => {
     e.preventDefault()
-    showLoadingIndicator()
+    //showLoadingIndicator()
     fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-      .then(response => showSuccessMessage(response))
+      .then(response => window.location.replace("http://www.sidhantgoyal.me/TIET-openDay-new/home.html"))
       .catch(error => console.error('Error!', error.message))
   })
 
 </script>
-
 
 
 
