@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="css/flaticon.css">
   <link rel="stylesheet" href="css/registerstyle.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="images/logo/logo.png" />
 </head>
 
 <body>
@@ -33,7 +34,7 @@
     </head>
     <body>
 
-      <form action="home.html" method="post">
+      <form action="home.html" method="post" name = "submit-to-google-sheet">
       
         <h1>TIET-Open Day</h1>
         
@@ -111,7 +112,8 @@
           <textarea id="bio" name="user_bio"></textarea>
         </fieldset>
         --> 
-        	<input class="button2" type="submit" value="Get Started" name="">
+          <input class="button2" type="submit" value="Get Started" name="">
+          <!-- <button class="button2" type="submit">Get Started</button> -->
 
       </form>
       
@@ -224,7 +226,7 @@ $('.tab a').on('click', function (e) {
 
 	<script>
 
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbyt6-9k4vJZUxkK4XmTrv54MfmnZY7SD6H1zAhc2YJ4sTki0MI/exec'
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbw_DgWXXYNyFWkMRSkyOrtfLbLBSPoVw9IVTq60qK_Hd-Pki41S/exec'
   const form = document.forms['submit-to-google-sheet']
   const loading = document.querySelector('.spinner-grow')
   const success = document.querySelector('#success-message')
@@ -232,9 +234,9 @@ $('.tab a').on('click', function (e) {
 
   form.addEventListener('submit', e => {
     e.preventDefault()
-    showLoadingIndicator()
+    //showLoadingIndicator()
     fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-      .then(response => showSuccessMessage(response))
+      .then(response => console.log(response))
       .catch(error => console.error('Error!', error.message))
   })
 
