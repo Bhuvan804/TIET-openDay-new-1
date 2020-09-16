@@ -20,62 +20,108 @@
 </head>
 
 <body>
+<!-- FORM START -->
 
-<!-- <form  action="/homepage.html"> -->
-  
-<div class='box'>
-  <div class='box-form'>
-    <div class='box-login-tab'></div>
-    <div class='box-login-title'>
-      <div class='i i-login'></div><h2>Register</h2>
-    </div>
-    <div class='box-login'>
-      <div class='fieldset-body' id='login_form'>
-        <button onclick="openLoginInfo();" class='b b-form i i-more' title='Help'></button>
-          <p class='field'>
-          <label for='user'>NAME</label>
-          <input type='text' id='name' name='name'  title='Username' required/>
-          <span id='valida' class='i i-warning'></span>
-        </p>
-         
-          <p class='field'>
-          <label for='user'>E-MAIL</label>
-          <input type='text' id='email' name='email'  title='Username'  />
-          <span id='valida' class='i i-warning'></span>
-        </p>
-          <p class='field'>
-          <label for='pass'>PHONE NUMBER</label>
-          <input type='text' id='phone' name='phone'  title='Password'/>
-          <span id='valida' class='i i-close'></span>
-        </p>
-        <p class='field'>
-          <label for='pass'>BRANCH</label>
-          <input type='text' id='branch' placeholder="COE" name='branch' title='Password'/>
-          <span id='valida' class='i i-close'></span>
-        </p>
 
-          <label class='checkbox'>
-            <input type='checkbox' checked value='TRUE' title='Keep me Signed in' /> Keep me Signed in
-          </label>
+  <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign Up Form</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
 
-          <a href="home.html">
-            <input type='submit' id="mybutton" value='GET STARTED' title='Get Started' />
-          </a>
-      </div>
-    </div>
-  </div>
-  <div class='box-info'>
-              <p><button onclick="closeLoginInfo();" class='b b-info i i-left' title='Back to Sign In'></button><h3>Need Help?</h3>
-    </p>
-              <div class='line-wh'></div>
-              <button onclick="" class='b-support' title='Forgot Password?'> Forgot Password?</button>
-    <button onclick="" class='b-support' title='Contact Support'> Contact Support</button>
-              <div class='line-wh'></div>
-    <button onclick="" class='b-cta' title='Sign up now!'> Already Registered?</button>
-          </div>
-</div>
+      <form action="home.html" method="post">
+      
+        <h1>TIET-Open Day</h1>
+        
+        <fieldset style="margin-bottom:10px ;">
+          <!-- <legend><span class="number">1</span>Your basic info</legend> -->
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="user_name" required>
+          
+          <label for="mail">Email:</label>
+          <input type="email" id="mail" name="user_email" required>
+          
+          <label for="phone">Phone Number:</label>
+          <input type="text" id="phone" name="user_phone" required>
+          
+          <label for="fname">Father's Name:</label>
+          <input type="text" id="fname" name="f_name" required>
 
-<!-- </form> -->
+
+
+
+           <!-- <fieldset> -->
+        <label for="job">Branch of Interest:</label>
+        <select id="job" name="user_job" required>
+          <optgroup label="Bio">
+            <option value="frontend_developer">Biomedical Engineering (BME)</option>
+            <option value="php_developor">Biotechnology (BT)</option>
+           <!--  <option value="python_developer">Python Developer</option>
+            <option value="rails_developer"> Rails Developer</option>
+            <option value="web_designer">Web Designer</option>
+            <option value="WordPress_developer">WordPress Developer</option> -->
+          </optgroup>
+          <optgroup label="BE">
+            <option value="Android_developer">Chemical Engineering (CHE)</option>
+            <option value="iOS_developer">Civil Engineering (CIE)</option>
+            <option value="mobile_designer">Computer Science & Business System (COBS)</option>
+			<option value="iOS_developer">Computer Engineering (COE)</option>
+            <option value="iOS_developer">Computer Science & Engineering (Patiala) (COPC)</option>
+            <option value="iOS_developer">Computer Science & Engineering (Derabassi) (COSE)</option>
+            <option value="iOS_developer">Electronics & Communication Engineering (ECE)</option>
+            <option value="iOS_developer">Electrical & Computer Engineering (ELC)</option>
+            <option value="iOS_developer">Electronics (Instrumentation & Control) Engineering (EIC)</option>
+            <option value="iOS_developer">Electrical Engineering (ELE)</option>
+            <option value="iOS_developer">Electronics & Computer Engineering (ENC)</option>
+            <option value="iOS_developer">Mechatronics (MEC)</option>
+            <option value="iOS_developer">Mechanical Engineering (MEE)</option>
+            <option value="iOS_developer">Mechanical Engineering (Production) (MPE)</option>
+                      
+          </optgroup>
+          <optgroup label="Dual Degree BE-MBA">
+            <option value="business_owner">Electronics & Communication Engineering (BEMBA-ECE)</option>
+            <option value="freelancer">Mechanical Engineering (BEMBA-MEE)</option>
+          </optgroup>
+          <!-- <optgroup label="Other">
+            <option value="secretary">Secretary</option>
+            <option value="maintenance">Maintenance</option>
+          </optgroup> -->
+        </select>
+        
+         <!--  <label>Interests:</label>
+          <input type="checkbox" id="development" value="interest_development" name="user_interest"><label class="light" for="development">Development</label><br>
+            <input type="checkbox" id="design" value="interest_design" name="user_interest"><label class="light" for="design">Design</label><br>
+          <input type="checkbox" id="business" value="interest_business" name="user_interest"><label class="light" for="business">Business</label>
+         -->
+        <!-- </fieldset> -->
+       
+          
+          <!-- <label>Age:</label>
+          <input type="radio" id="under_13" value="under_13" name="user_age"><label for="under_13" class="light">Under 13</label><br>
+          <input type="radio" id="over_13" value="over_13" name="user_age"><label for="over_13" class="light">13 or older</label> -->
+        </fieldset>
+        
+       <!--  <fieldset>
+          <legend><span class="number">2</span>Your profile</legend>
+          <label for="bio">Biography:</label>
+          <textarea id="bio" name="user_bio"></textarea>
+        </fieldset>
+        --> 
+        	<input class="button2" type="submit" value="Get Started" name="">
+
+      </form>
+      
+    </body>
+</html>
+
+
+
+
+<!-- FORM END -->
 
 
 
@@ -129,60 +175,50 @@
  -->
 
  <script type="text/javascript">
-   $(document).ready(function() {
-    $("#do_login").click(function() { 
-       closeLoginInfo();
-       $(this).parent().find('span').css("display","none");
-       $(this).parent().find('span').removeClass("i-save");
-       $(this).parent().find('span').removeClass("i-warning");
-       $(this).parent().find('span').removeClass("i-close");
-       
-        var proceed = true;
-        $("#login_form input").each(function(){
-            
-            if(!$.trim($(this).val())){
-                $(this).parent().find('span').addClass("i-warning");
-              $(this).parent().find('span').css("display","block");  
-                proceed = false;
-            }
-        });
-       
-        if(proceed) //everything looks good! proceed...
-        {
-            $(this).parent().find('span').addClass("i-save");
-            $(this).parent().find('span').css("display","block");
+  
+  $('.form').find('input, textarea').on('keyup blur focus', function (e) {
+  
+  var $this = $(this),
+      label = $this.prev('label');
+
+	  if (e.type === 'keyup') {
+			if ($this.val() === '') {
+          label.removeClass('active highlight');
+        } else {
+          label.addClass('active highlight');
         }
-    });
-    
-    //reset previously results and hide all message on .keyup()
-    $("#login_form input").keyup(function() { 
-        $(this).parent().find('span').css("display","none");
-    });
- 
-  openLoginInfo();
-  setTimeout(closeLoginInfo, 1000);
+    } else if (e.type === 'blur') {
+    	if( $this.val() === '' ) {
+    		label.removeClass('active highlight'); 
+			} else {
+		    label.removeClass('highlight');   
+			}   
+    } else if (e.type === 'focus') {
+      
+      if( $this.val() === '' ) {
+    		label.removeClass('highlight'); 
+			} 
+      else if( $this.val() !== '' ) {
+		    label.addClass('highlight');
+			}
+    }
+
 });
 
-function openLoginInfo() {
-    $(document).ready(function(){ 
-      $('.b-form').css("opacity","0.01");
-      $('.box-form').css("left","-37%");
-      $('.box-info').css("right","-37%");
-    });
-}
+$('.tab a').on('click', function (e) {
+  
+  e.preventDefault();
+  
+  $(this).parent().addClass('active');
+  $(this).parent().siblings().removeClass('active');
+  
+  target = $(this).attr('href');
 
-function closeLoginInfo() {
-    $(document).ready(function(){ 
-      $('.b-form').css("opacity","1");
-      $('.box-form').css("left","0px");
-      $('.box-info').css("right","-5px"); 
-    });
-}
-
-$(window).on('resize', function(){
-      closeLoginInfo();
+  $('.tab-content > div').not(target).hide();
+  
+  $(target).fadeIn(600);
+  
 });
-
 
 </script>
 

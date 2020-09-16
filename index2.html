@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>TIET - Open Day</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+  <link rel="stylesheet" href="css/jquery.timepicker.css">
+  <link rel="stylesheet" href="css/flaticon.css">
+  <link rel="stylesheet" href="css/registerstyle2.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- <form  action="/homepage.html"> -->
+  
+<div class='box'>
+  <div class='box-form'>
+    <div class='box-login-tab'></div>
+    <div class='box-login-title'>
+      <div class='i i-login'></div><h2>Register</h2>
+    </div>
+    <div class='box-login'>
+      <div class='fieldset-body' id='login_form'>
+        <button onclick="openLoginInfo();" class='b b-form i i-more' title='Help'></button>
+          <p class='field'>
+          <label for='user'>NAME</label>
+          <input type='text' id='name' name='name'  title='Username' required/>
+          <span id='valida' class='i i-warning'></span>
+        </p>
+         
+          <p class='field'>
+          <label for='user'>E-MAIL</label>
+          <input type='text' id='email' name='email'  title='Username'  />
+          <span id='valida' class='i i-warning'></span>
+        </p>
+          <p class='field'>
+          <label for='pass'>PHONE NUMBER</label>
+          <input type='text' id='phone' name='phone'  title='Password'/>
+          <span id='valida' class='i i-close'></span>
+        </p>
+          <p class='field'>
+          <label for='pass'>FATHER'S NAME</label>
+          <input type='text' id='father_name' name='father_name'  title='Password'/>
+          <span id='valida' class='i i-close'></span>
+        </p>
+        <p class='field'>
+          <label for='pass'>BRANCH</label>
+          <input type='text' id='branch' placeholder="COE" name='branch' title='Password'/>
+          <span id='valida' class='i i-close'></span>
+        </p>
+
+ <p class='field'>
+          <label for='pass'>BRANCH</label>
+   	<select id="cars" name="cars">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+  </select>
+
+          <span id='valida' class='i i-close'></span>
+        </p>
+
+  
+
+         <!--  <label class='checkbox'>
+            <input type='checkbox' checked value='TRUE' title='Keep me Signed in' /> Keep me Signed in
+          </label>
+ -->
+          <a href="home.html">
+            <input type='submit' id="mybutton" value='GET STARTED' title='Get Started' />
+          </a>
+      </div>
+    </div>
+  </div>
+  <div class='box-info'>
+              <p><button onclick="closeLoginInfo();" class='b b-info i i-left' title='Back to Sign In'></button><h3>Need Help?</h3>
+    </p>
+              <div class='line-wh'></div>
+              <button onclick="" class='b-support' title='Forgot Password?'> Forgot Password?</button>
+    <button onclick="" class='b-support' title='Contact Support'> Contact Support</button>
+              <div class='line-wh'></div>
+    <button onclick="" class='b-cta' title='Sign up now!'> Already Registered?</button>
+          </div>
+</div>
+
+<!-- </form> -->
+
+
+
+<script src="js/jquery.min.js" type="7fcabe0204b65ee20594bff5-text/javascript"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js" type="7fcabe0204b65ee20594bff5-text/javascript"></script>
+  <script src="js/popper.min.js" type="7fcabe0204b65ee20594bff5-text/javascript"></script>
+  <script src="js/bootstrap.min.js" type="7fcabe0204b65ee20594bff5-text/javascript"></script>
+  <script src="js/jquery.easing.1.3.js" type="7fcabe0204b65ee20594bff5-text/javascript"></script>
+  <script src="js/jquery.waypoints.min.js" type="7fcabe0204b65ee20594bff5-text/javascript"></script>
+  <script src="js/jquery.stellar.min.js" type="7fcabe0204b65ee20594bff5-text/javascript"></script>
+  <script src="js/jquery.animateNumber.min.js" type="7fcabe0204b65ee20594bff5-text/javascript"></script>
+  <script src="js/bootstrap-datepicker.js" type="7fcabe0204b65ee20594bff5-text/javascript"></script>
+  <script src="js/jquery.timepicker.min.js" type="7fcabe0204b65ee20594bff5-text/javascript"></script>
+  <script src="js/owl.carousel.min.js" type="7fcabe0204b65ee20594bff5-text/javascript"></script>
+  <script src="js/jquery.magnific-popup.min.js" type="7fcabe0204b65ee20594bff5-text/javascript"></script>
+  <script src="js/scrollax.min.js" type="7fcabe0204b65ee20594bff5-text/javascript"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"
+    type="7fcabe0204b65ee20594bff5-text/javascript"></script>
+  <script src="js/google-map.js" type="7fcabe0204b65ee20594bff5-text/javascript"></script>
+  <script src="js/main.js" type="7fcabe0204b65ee20594bff5-text/javascript"></script>
+
+  <script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js"
+    data-cf-settings="7fcabe0204b65ee20594bff5-|49" defer=""></script>
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js"
+    data-cf-beacon='{"rayId":"5d06b9d2add2017a","version":"2020.9.0","si":10}'></script>
+  <!-- <script>
+    window.document.onkeydown = function (e) {
+      if (!e) {
+        e = event;
+      }
+      if (e.keyCode == 27) {
+        lightbox_close();
+      }
+    }
+
+    function lightbox_open() {
+      var lightBoxVideo = document.getElementById("VisaChipCardVideo");
+      window.scrollTo(0, 0);
+      document.getElementById('light').style.display = 'block';
+      document.getElementById('fade').style.display = 'block';
+      lightBoxVideo.play();
+    }
+
+    function lightbox_close() {
+      var lightBoxVideo = document.getElementById("VisaChipCardVideo");
+      document.getElementById('light').style.display = 'none';
+      document.getElementById('fade').style.display = 'none';
+      lightBoxVideo.pause();
+    }
+  </script>
+ -->
+
+ <script type="text/javascript">
+   $(document).ready(function() {
+    $("#do_login").click(function() { 
+       closeLoginInfo();
+       $(this).parent().find('span').css("display","none");
+       $(this).parent().find('span').removeClass("i-save");
+       $(this).parent().find('span').removeClass("i-warning");
+       $(this).parent().find('span').removeClass("i-close");
+       
+        var proceed = true;
+        $("#login_form input").each(function(){
+            
+            if(!$.trim($(this).val())){
+                $(this).parent().find('span').addClass("i-warning");
+              $(this).parent().find('span').css("display","block");  
+                proceed = false;
+            }
+        });
+       
+        if(proceed) //everything looks good! proceed...
+        {
+            $(this).parent().find('span').addClass("i-save");
+            $(this).parent().find('span').css("display","block");
+        }
+    });
+    
+    //reset previously results and hide all message on .keyup()
+    $("#login_form input").keyup(function() { 
+        $(this).parent().find('span').css("display","none");
+    });
+ 
+  openLoginInfo();
+  setTimeout(closeLoginInfo, 1000);
+});
+
+function openLoginInfo() {
+    $(document).ready(function(){ 
+      $('.b-form').css("opacity","0.01");
+      $('.box-form').css("left","-37%");
+      $('.box-info').css("right","-37%");
+    });
+}
+
+function closeLoginInfo() {
+    $(document).ready(function(){ 
+      $('.b-form').css("opacity","1");
+      $('.box-form').css("left","0px");
+      $('.box-info').css("right","-5px"); 
+    });
+}
+
+$(window).on('resize', function(){
+      closeLoginInfo();
+});
+
+
+</script>
+
+	<script>
+
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyt6-9k4vJZUxkK4XmTrv54MfmnZY7SD6H1zAhc2YJ4sTki0MI/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const loading = document.querySelector('.spinner-grow')
+  const success = document.querySelector('#success-message')
+  const body = document.querySelector('.body')
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    showLoadingIndicator()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+      .then(response => showSuccessMessage(response))
+      .catch(error => console.error('Error!', error.message))
+  })
+
+</script>
+
+</script>
+</body>
+
+</html>
