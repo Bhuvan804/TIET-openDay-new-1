@@ -126,10 +126,6 @@
           <optgroup label="Bio">
             <option value="Biomedical Engineering (BME)">Biomedical Engineering (BME)</option>
             <option value="Biotechnology (BT)">Biotechnology (BT)</option>
-            <!--  <option value="python_developer">Python Developer</option>
-            <option value="rails_developer"> Rails Developer</option>
-            <option value="web_designer">Web Designer</option>
-            <option value="WordPress_developer">WordPress Developer</option> -->
           </optgroup>
           <optgroup label="BE">
             <option value="Chemical Engineering (CHE)">Chemical Engineering (CHE)</option>
@@ -157,10 +153,6 @@
               (BEMBA-ECE)</option>
             <option value="Mechanical Engineering (BEMBA-MEE)">Mechanical Engineering (BEMBA-MEE)</option>
           </optgroup>
-          <!-- <optgroup label="Other">
-            <option value="secretary">Secretary</option>
-            <option value="maintenance">Maintenance</option>
-          </optgroup> -->
         </select>
 
 
@@ -294,7 +286,7 @@
 
 
 
-      <input class="button2" type="submit" value="Get Started" name="">
+      <input class="button2" type="submit" value="Register" name="">
       <!-- <button class="button2" type="submit">Get Started</button> -->
 
     </form>
@@ -358,7 +350,19 @@
     }
   </script>
  -->
-
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/5f5b2d624704467e89ee0a50/default';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+  <!--End of Tawk.to Script-->
 <script type="text/javascript">
 
   $('.form').find('input, textarea').on('keyup blur focus', function (e) {
@@ -419,7 +423,7 @@
     e.preventDefault()
     //showLoadingIndicator()
     fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-      .then(response => window.location.replace("http://www.sidhantgoyal.me/TIET-openDay-new/home.html"))
+      .then(response => window.location.replace("http://www.sidhantgoyal.me/TIET-openDay-new/landingpage.html"))
       .catch(error => console.error('Error!', error.message))
   })
 
