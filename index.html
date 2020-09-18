@@ -19,12 +19,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" href="images/logo/logo.png" />
 
-  <script>
-    // Redirect to landing page if 'form_submitted' cookie does not exist
-    if (typeof Cookies.get('secondvisit') === 'true') {
-      window.location.replace("http://openday.thapar.edu/landingpage.html");
-    }
-  </script>
   <!-- MULTI SELECT -->
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
@@ -414,8 +408,6 @@
 
 <script>
 
-
-  Cookies.set('secondvisit', 'true', { expires: 3 });
   const scriptURL = 'https://script.google.com/macros/s/AKfycbw_DgWXXYNyFWkMRSkyOrtfLbLBSPoVw9IVTq60qK_Hd-Pki41S/exec'
   const form = document.forms['submit-to-google-sheet']
   const loading = document.querySelector('.spinner-grow')
