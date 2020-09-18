@@ -22,7 +22,7 @@
   <script>
     // Redirect to landing page if 'form_submitted' cookie does not exist
     if (typeof Cookies.get('secondvisit') === 'true') {
-      window.location.href = "landingpage.html";
+      window.location.replace("http://openday.thapar.edu/landingpage.html");
     }
   </script>
   <!-- MULTI SELECT -->
@@ -416,9 +416,7 @@
 
 
   Cookies.set('secondvisit', 'true', { expires: 3 });
-
-  window.location.href = "landingpage.html"; 
-  /* const scriptURL = 'https://script.google.com/macros/s/AKfycbw_DgWXXYNyFWkMRSkyOrtfLbLBSPoVw9IVTq60qK_Hd-Pki41S/exec'
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbw_DgWXXYNyFWkMRSkyOrtfLbLBSPoVw9IVTq60qK_Hd-Pki41S/exec'
   const form = document.forms['submit-to-google-sheet']
   const loading = document.querySelector('.spinner-grow')
   const success = document.querySelector('#success-message')
@@ -430,7 +428,7 @@
     fetch(scriptURL, { method: 'POST', body: new FormData(form) })
       .then(response => window.location.replace("http://openday.thapar.edu/landingpage.html"))
       .catch(error => console.error('Error!', error.message))
-  }) */
+  })
 
 </script>
 
