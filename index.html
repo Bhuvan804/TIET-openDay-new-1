@@ -19,7 +19,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" href="images/logo/logo.png" />
 
-
+  <script>
+    // Redirect to landing page if 'form_submitted' cookie does not exist
+    if (typeof Cookies.get('secondvisit') === 'true') {
+      window.location.replace("http://openday.thapar.edu/landingpage.html");
+    }
+  </script>
   <!-- MULTI SELECT -->
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
@@ -232,32 +237,14 @@
           <optgroup label="School Of Humanities and Social Sciences">
             <option value="M.A Psychology">M.A Psychology</option>
           </optgroup>
-          <!-- <optgroup label="Other">
-            <option value="secretary">Secretary</option>
-            <option value="maintenance">Maintenance</option>
-          </optgroup> -->
         </select>
-
-
-
-
-
-
-
-
-
 
         <!-- <fieldset> -->
         <label for="job">Preference 3</label>
-        <!-- <select id="job" name="user_job"  multiple="multiple"> -->
         <select id="job" name="user_job3">
           <optgroup label="Bio">
             <option value="Biomedical Engineering (BME)">Biomedical Engineering (BME)</option>
             <option value="Biotechnology (BT)">Biotechnology (BT)</option>
-            <!--  <option value="python_developer">Python Developer</option>
-            <option value="rails_developer"> Rails Developer</option>
-            <option value="web_designer">Web Designer</option>
-            <option value="WordPress_developer">WordPress Developer</option> -->
           </optgroup>
           <optgroup label="BE">
             <option value="Chemical Engineering (CHE)">Chemical Engineering (CHE)</option>
@@ -299,39 +286,10 @@
           <optgroup label="School Of Humanities and Social Sciences">
             <option value="M.A Psychology">M.A Psychology</option>
           </optgroup>
-          
-          <!-- <optgroup label="Other">
-            <option value="secretary">Secretary</option>
-            <option value="maintenance">Maintenance</option>
-          </optgroup> -->
         </select>
 
-        <!--  <label>Interests:</label>
-          <input type="checkbox" id="development" value="interest_development" name="user_interest"><label class="light" for="development">Development</label><br>
-            <input type="checkbox" id="design" value="interest_design" name="user_interest"><label class="light" for="design">Design</label><br>
-          <input type="checkbox" id="business" value="interest_business" name="user_interest"><label class="light" for="business">Business</label>
-         -->
-        <!-- </fieldset> -->
-
-
-        <!-- <label>Age:</label>
-          <input type="radio" id="under_13" value="under_13" name="user_age"><label for="under_13" class="light">Under 13</label><br>
-          <input type="radio" id="over_13" value="over_13" name="user_age"><label for="over_13" class="light">13 or older</label> -->
       </fieldset>
-
-      <!--  <fieldset>
-          <legend><span class="number">2</span>Your profile</legend>
-          <label for="bio">Biography:</label>
-          <textarea id="bio" name="user_bio"></textarea>
-        </fieldset>
-        -->
-
-
-
-
       <input class="button2" type="submit" value="Register" name="">
-      <!-- <button class="button2" type="submit">Get Started</button> -->
-
     </form>
 
   </body>
@@ -456,6 +414,8 @@
 
 <script>
 
+
+  Cookies.set('secondvisit', 'true', { expires: 3 });
   const scriptURL = 'https://script.google.com/macros/s/AKfycbw_DgWXXYNyFWkMRSkyOrtfLbLBSPoVw9IVTq60qK_Hd-Pki41S/exec'
   const form = document.forms['submit-to-google-sheet']
   const loading = document.querySelector('.spinner-grow')
